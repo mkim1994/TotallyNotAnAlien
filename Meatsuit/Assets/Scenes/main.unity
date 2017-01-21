@@ -365,6 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad52dc55df5cb42898db296bd7e74b10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waveThreshold: 0.6
 --- !u!1 &687803355
 GameObject:
   m_ObjectHideFlags: 0
