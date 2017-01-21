@@ -13,12 +13,15 @@ public class GameManager : MonoBehaviour {
 	AudioManager audiomanager;
 	UIManager uimanager;
 
+	public List<GameObject> NPCs;
+
 	void Awake () {
 		Time.timeScale = 1f;
 		currentSuspicion = startingSuspicion;
 		uimanager = GameObject.FindWithTag ("UIManager").GetComponent<UIManager> ();
 		audiomanager = GameObject.FindWithTag ("AudioManager").GetComponent<AudioManager>();
 
+		NPCs = new List<GameObject> ();
 	}
 
 	void Start(){

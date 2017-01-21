@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class Spawner : MonoBehaviour {
 
+	GameManager gm;
+
 	public GameObject NPCPrefab;
 
 	public Vector3 npcSpawnPoint1;
@@ -20,6 +22,8 @@ public class Spawner : MonoBehaviour {
 	{
 		npcSpawnPoint1 = Camera.main.ViewportToWorldPoint (new Vector3 (1.2f, 0.3f, 10.0f));
 		npcSpawnPoint2 = Camera.main.ViewportToWorldPoint (new Vector3 (-0.3f, 0.3f, 10.0f));
+
+		gm = GameObject.FindWithTag ("GameManager").GetComponent<GameManager> ();
 	}
 
 	public void Update()
@@ -83,6 +87,8 @@ public class Spawner : MonoBehaviour {
 		GameObject npc = Instantiate (NPCPrefab, newPos, Quaternion.identity) as GameObject;
 		npc.transform.localScale = newScale;
 		npc.GetComponent<SpriteRenderer> ().sortingOrder = order;
+
+		gm.NPCs.Add (npc);
 
 	}
 }
