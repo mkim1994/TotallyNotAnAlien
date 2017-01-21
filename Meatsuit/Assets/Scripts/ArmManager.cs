@@ -59,7 +59,10 @@ public class ArmManager : MonoBehaviour {
 		GameObject closest = null;
 		float distance = Mathf.Infinity;
 		Vector3 position = transform.position;
+		//int max = gm.NPCs [0].GetComponent<SpriteRenderer> ().sortingOrder;
 		foreach (GameObject go in gm.NPCs) {
+			//if(
+
 			Vector3 diff = go.transform.position - position;
 			float curDistance = diff.sqrMagnitude;
 			if (curDistance < distance) {
