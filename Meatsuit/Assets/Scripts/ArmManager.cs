@@ -6,7 +6,7 @@ public class ArmManager : MonoBehaviour {
 
 	private Vector3 target;
 
-	bool waving;
+	public bool waving;
 	public float waveThreshold;
 
 	UIManager uimanager;
@@ -102,6 +102,10 @@ public class ArmManager : MonoBehaviour {
 				armMovedLeft = false;
 			}
 		}
+	}
+
+	void CheckGesture(){
+
 	}
 
 	void FingerKeys(){

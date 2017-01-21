@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour {
 
+	AudioManager audiomanager;
+	ArmManager armmanager;
+
 	Spawner spawner;
 	float walkspeed;
 	GameManager gm;
@@ -14,12 +17,18 @@ public class NPC : MonoBehaviour {
 	public bool selected;
 	//bool selected;
 
+	bool wavedAt;
+
 	void Start () {
-		
-		spawner = GameObject.FindWithTag ("Spawner").GetComponent<Spawner> ();
+
 		walkspeed = Random.Range (0.06f, 0.1f);
+		spawner = GameObject.FindWithTag ("Spawner").GetComponent<Spawner> ();
 
 		gm = GameObject.FindWithTag ("GameManager").GetComponent<GameManager> ();
+
+		audiomanager = GameObject.FindWithTag ("AudioManager").GetComponent<AudioManager> ();
+
+		armmanager = GameObject.FindWithTag ("ArmManager").GetComponent<ArmManager> ();
 	}
 	
 	// Update is called once per frame
@@ -37,7 +46,10 @@ public class NPC : MonoBehaviour {
 			}
 
 			if (selected) {
-				
+				if (armmanager.waving && !wavedAt) {
+					wavedAt = true;
+					audiomanager.transform.GetChild (2).gameObject.GetComponent<AudioSource> ().Play ();
+				}
 			}
 		}
 	}

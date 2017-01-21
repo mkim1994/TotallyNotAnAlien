@@ -9,6 +9,7 @@ TagManager:
   - AudioManager
   - Spawner
   - NPC
+  - ArmManager
   layers:
   - Default
   - TransparentFX
