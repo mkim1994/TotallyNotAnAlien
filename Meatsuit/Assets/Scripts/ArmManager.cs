@@ -46,6 +46,10 @@ public class ArmManager : MonoBehaviour {
 
 
 	void FingerKeys(){
+		if (Input.GetKeyDown (KeyCode.Tab)) {
+			transform.localScale = new Vector3 (transform.localScale.x * -1, transform.localScale.y);
+		}
+
 		if (Input.GetKeyDown (KeyCode.A)) { //thumb
 			if (fingers [0].activeSelf) {
 				fingers [0].SetActive (false);

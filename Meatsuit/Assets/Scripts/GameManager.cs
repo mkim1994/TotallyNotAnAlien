@@ -40,6 +40,9 @@ public class GameManager : MonoBehaviour {
 		audiomanager.sirensound.Play ();
 
 		uimanager.gameOverText.gameObject.SetActive (true);
+		Camera.main.GetComponent<CameraShake> ().enabled = true;
+		Camera.main.GetComponent<CameraShake> ().shakeDuration = 0.5f;
+
 
 		Time.timeScale = 0f;
 	}
