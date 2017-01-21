@@ -1190,7 +1190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingSuspicion: 0
   currentSuspicion: 0
-  suspicionRate: 0.01
+  suspicionRate: 0.001
   isArrested: 0
 --- !u!1 &1822392935
 GameObject:

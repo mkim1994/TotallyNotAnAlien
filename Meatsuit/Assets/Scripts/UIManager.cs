@@ -24,15 +24,5 @@ public class UIManager : MonoBehaviour {
 	void suspicionClimb(){
 		gm.currentSuspicion += gm.suspicionRate;
 		suspicionSlider.value = gm.currentSuspicion;
-
-		if (gm.currentSuspicion >= 1f & !gm.isArrested) {
-			Arrested ();
-		}
-	}
-
-	void Arrested(){
-		gm.isArrested = true;
-		gameOverText.gameObject.SetActive (true);
-		Time.timeScale = 0f;
 	}
 }
