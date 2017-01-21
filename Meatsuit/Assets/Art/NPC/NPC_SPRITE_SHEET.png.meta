@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 46317d75d6cb84d71bedde1d72d29251
-timeCreated: 1485027680
+timeCreated: 1485027940
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -149,11 +149,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1792
-        width: 521
-        height: 896
+        y: 1842
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -162,11 +162,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 521
-        y: 1792
-        width: 521
-        height: 896
+        y: 1842
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -175,11 +175,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1042
-        y: 1792
-        width: 521
-        height: 896
+        y: 1842
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -188,11 +188,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1563
-        y: 1792
-        width: 521
-        height: 896
+        y: 1842
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -201,11 +201,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2084
-        y: 1792
-        width: 521
-        height: 896
+        y: 1842
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -214,11 +214,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2605
-        y: 1792
-        width: 521
-        height: 896
+        y: 1842
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -227,11 +227,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3126
-        y: 1792
-        width: 521
-        height: 896
+        y: 1842
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -240,11 +240,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3647
-        y: 1792
-        width: 521
-        height: 896
+        y: 1842
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -252,12 +252,12 @@ TextureImporter:
       name: NPC_SPRITE_SHEET_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 896
-        width: 521
-        height: 896
+        x: 4168
+        y: 1842
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -265,12 +265,12 @@ TextureImporter:
       name: NPC_SPRITE_SHEET_9
       rect:
         serializedVersion: 2
-        x: 521
-        y: 896
-        width: 521
-        height: 896
+        x: 0
+        y: 921
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -278,12 +278,12 @@ TextureImporter:
       name: NPC_SPRITE_SHEET_10
       rect:
         serializedVersion: 2
-        x: 1042
-        y: 896
-        width: 521
-        height: 896
+        x: 521
+        y: 921
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -291,12 +291,12 @@ TextureImporter:
       name: NPC_SPRITE_SHEET_11
       rect:
         serializedVersion: 2
-        x: 1563
-        y: 896
-        width: 521
-        height: 896
+        x: 1042
+        y: 921
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -304,12 +304,12 @@ TextureImporter:
       name: NPC_SPRITE_SHEET_12
       rect:
         serializedVersion: 2
-        x: 2084
-        y: 896
-        width: 521
-        height: 896
+        x: 1563
+        y: 921
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -317,12 +317,12 @@ TextureImporter:
       name: NPC_SPRITE_SHEET_13
       rect:
         serializedVersion: 2
-        x: 2605
-        y: 896
-        width: 521
-        height: 896
+        x: 2084
+        y: 921
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -330,12 +330,12 @@ TextureImporter:
       name: NPC_SPRITE_SHEET_14
       rect:
         serializedVersion: 2
-        x: 3126
-        y: 896
-        width: 521
-        height: 896
+        x: 2605
+        y: 921
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -343,12 +343,12 @@ TextureImporter:
       name: NPC_SPRITE_SHEET_15
       rect:
         serializedVersion: 2
-        x: 3647
-        y: 896
-        width: 521
-        height: 896
+        x: 3126
+        y: 921
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -356,12 +356,12 @@ TextureImporter:
       name: NPC_SPRITE_SHEET_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 521
-        height: 896
+        x: 3647
+        y: 921
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -369,12 +369,12 @@ TextureImporter:
       name: NPC_SPRITE_SHEET_17
       rect:
         serializedVersion: 2
-        x: 521
-        y: 0
-        width: 521
-        height: 896
+        x: 4168
+        y: 921
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -382,12 +382,12 @@ TextureImporter:
       name: NPC_SPRITE_SHEET_18
       rect:
         serializedVersion: 2
-        x: 1042
+        x: 0
         y: 0
-        width: 521
-        height: 896
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -395,12 +395,12 @@ TextureImporter:
       name: NPC_SPRITE_SHEET_19
       rect:
         serializedVersion: 2
-        x: 1563
+        x: 521
         y: 0
-        width: 521
-        height: 896
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -408,12 +408,12 @@ TextureImporter:
       name: NPC_SPRITE_SHEET_20
       rect:
         serializedVersion: 2
-        x: 2084
+        x: 1042
         y: 0
-        width: 521
-        height: 896
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -421,12 +421,12 @@ TextureImporter:
       name: NPC_SPRITE_SHEET_21
       rect:
         serializedVersion: 2
-        x: 2605
+        x: 1563
         y: 0
-        width: 521
-        height: 896
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -434,12 +434,12 @@ TextureImporter:
       name: NPC_SPRITE_SHEET_22
       rect:
         serializedVersion: 2
-        x: 3126
+        x: 2084
         y: 0
-        width: 521
-        height: 896
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -447,12 +447,51 @@ TextureImporter:
       name: NPC_SPRITE_SHEET_23
       rect:
         serializedVersion: 2
+        x: 2605
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SPRITE_SHEET_24
+      rect:
+        serializedVersion: 2
+        x: 3126
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SPRITE_SHEET_25
+      rect:
+        serializedVersion: 2
         x: 3647
         y: 0
-        width: 521
-        height: 896
+        width: 521.1111
+        height: 921
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SPRITE_SHEET_26
+      rect:
+        serializedVersion: 2
+        x: 4168
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

@@ -6,26 +6,32 @@ public class NPC : MonoBehaviour {
 
 	Spawner spawner;
 	float walkspeed;
+	GameManager gm;
 
 	GameObject arrow;
 	// Use this for initialization
 	void Start () {
+		
 		spawner = GameObject.FindWithTag ("Spawner").GetComponent<Spawner> ();
 		walkspeed = Random.Range (0.03f, 0.08f);
 
 		arrow = transform.GetChild (0).gameObject;
+
+		gm = GameObject.FindWithTag ("GameManager").GetComponent<GameManager> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (transform.localScale.x > 0) { //facing left
-			transform.position -= new Vector3(walkspeed,0f);
-		} else { //facing right
-			transform.position += new Vector3(walkspeed,0f);
-		}
+		if (!gm.isArrested) {
+			if (transform.localScale.x > 0) { //facing left
+				transform.position -= new Vector3 (walkspeed, 0f);
+			} else { //facing right
+				transform.position += new Vector3 (walkspeed, 0f);
+			}
 
-		if (transform.position.x > spawner.npcSpawnPoint1.x || transform.position.x < spawner.npcSpawnPoint2.x) {
-			Destroy (this.gameObject);
+			if (transform.position.x > spawner.npcSpawnPoint1.x || transform.position.x < spawner.npcSpawnPoint2.x) {
+				Destroy (this.gameObject);
+			}
 		}
 	}
 }
