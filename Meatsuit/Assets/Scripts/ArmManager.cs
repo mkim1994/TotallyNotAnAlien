@@ -10,6 +10,7 @@ public class ArmManager : MonoBehaviour {
 	public float waveThreshold;
 
 	UIManager uimanager;
+	GameManager gm;
 
 	bool armMovedLeft;
 	bool armMovedRight;
@@ -21,6 +22,8 @@ public class ArmManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		uimanager = GameObject.FindWithTag ("UIManager").GetComponent<UIManager> ();
+		gm = GameObject.FindWithTag ("GameManager").GetComponent<GameManager> ();
+
 		hand = this.gameObject.transform.GetChild(1).gameObject;
 		fingers = new GameObject[5];
 		fingerState = new bool[5];
@@ -32,11 +35,13 @@ public class ArmManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetMouseButton(0)){
-			FollowMouse ();
-			CheckWave ();
+		if (!gm.isArrested) {
+			if (Input.GetMouseButton (0)) {
+				FollowMouse ();
+				CheckWave ();
+			}
+			FingerKeys ();
 		}
-		FingerKeys ();
 	}
 
 
@@ -101,7 +106,7 @@ public class ArmManager : MonoBehaviour {
 
 	void CheckWave(){
 		if (waving) {
-			uimanager.currentSuspicion = 0f;
+			gm.currentSuspicion = 0f;
 			waving = false;
 		}
 		if (Input.GetAxis ("Mouse X") < -waveThreshold) {

@@ -5,19 +5,15 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour {
 
-	public float startingSuspicion = 0f;
-	public float currentSuspicion;
 	public Slider suspicionSlider;
+	public Text gameOverText;
 	//public Image 
 
-	public float suspicionRate;
-
-	public bool isArrested;
-
+	GameManager gm;
 
 	// Use this for initialization
 	void Start () {
-		currentSuspicion = startingSuspicion;
+		gm = GameObject.FindWithTag ("GameManager").GetComponent<GameManager> ();
 	}
 	
 	// Update is called once per frame
@@ -26,16 +22,17 @@ public class UIManager : MonoBehaviour {
 	}
 
 	void suspicionClimb(){
-		currentSuspicion += suspicionRate;
-		suspicionSlider.value = currentSuspicion;
+		gm.currentSuspicion += gm.suspicionRate;
+		suspicionSlider.value = gm.currentSuspicion;
 
-		if (currentSuspicion >= 1f & !isArrested) {
+		if (gm.currentSuspicion >= 1f & !gm.isArrested) {
 			Arrested ();
 		}
 	}
 
 	void Arrested(){
-		isArrested = true;
-		print (isArrested);
+		gm.isArrested = true;
+		gameOverText.gameObject.SetActive (true);
+		Time.timeScale = 0f;
 	}
 }
