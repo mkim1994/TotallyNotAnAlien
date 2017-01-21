@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class SuspicionMeter : MonoBehaviour {
+public class UIManager : MonoBehaviour {
 
 	public float startingSuspicion = 0f;
 	public float currentSuspicion;
