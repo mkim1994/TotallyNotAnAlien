@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour {
 
 	void Arrested(){
 		isArrested = true;
-		audiomanager.sirensound.Play();
+		audiomanager.sirensound.Play ();
 
 		print ("what");
 
