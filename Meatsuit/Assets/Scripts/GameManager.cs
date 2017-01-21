@@ -11,12 +11,15 @@ public class GameManager : MonoBehaviour {
 	public bool isArrested;
 
 	AudioManager audiomanager;
+	UIManager uimanager;
 
 
 
 	void Awake () {
 		Time.timeScale = 1f;
 		currentSuspicion = startingSuspicion;
+
+		uimanager = GameObject.FindWithTag ("UIManager").GetComponent<UIManager> ();
 
 	}
 
@@ -36,7 +39,7 @@ public class GameManager : MonoBehaviour {
 		isArrested = true;
 		audiomanager.sirensound.Play ();
 
-		print ("what");
+		uimanager.gameOverText.gameObject.SetActive (true);
 
 		Time.timeScale = 0f;
 	}
