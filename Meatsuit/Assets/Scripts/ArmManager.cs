@@ -37,10 +37,8 @@ public class ArmManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (!gm.isArrested) {
-			if (Input.GetMouseButton (0)) {
-				FollowMouse ();
-				CheckWave ();
-			}
+			FollowMouse ();
+			CheckWave ();
 			FingerKeys ();
 
 			//GameObject[] gos = GameObject.FindGameObjectsWithTag ("NPC");
@@ -74,29 +72,35 @@ public class ArmManager : MonoBehaviour {
 	}
 
 	void FollowMouse(){
-		target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		target = new Vector3 (target.x, target.y+3, 10);
-		transform.position = target;
+		target = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+		target = new Vector3 (target.x, target.y + 3, 10);
+		if(Input.GetMouseButtonDown(0)){
+			iTween.MoveTo (this.gameObject, target, 0.2f);
+		} else if (Input.GetMouseButton (0)) {
+			transform.position = target;
+		} 
 	}
 
 	void CheckWave(){
-		if (waving) {
-			gm.currentSuspicion = 0f;
-			waving = false;
-		}
-		if (Input.GetAxis ("Mouse X") < -waveThreshold) {
-			armMovedLeft = true;
-			if (armMovedRight) {
-				waving = true;
+		if (Input.GetMouseButton (0)) {
+			if (waving) {
+				gm.currentSuspicion = 0f;
+				waving = false;
 			}
-			armMovedRight = false;
-		}
-		if (Input.GetAxis ("Mouse X") > waveThreshold) {
-			armMovedRight = true;
-			if (armMovedLeft) {
-				waving = true;
+			if (Input.GetAxis ("Mouse X") < -waveThreshold) {
+				armMovedLeft = true;
+				if (armMovedRight) {
+					waving = true;
+				}
+				armMovedRight = false;
 			}
-			armMovedLeft = false;
+			if (Input.GetAxis ("Mouse X") > waveThreshold) {
+				armMovedRight = true;
+				if (armMovedLeft) {
+					waving = true;
+				}
+				armMovedLeft = false;
+			}
 		}
 	}
 

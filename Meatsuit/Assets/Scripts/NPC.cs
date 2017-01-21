@@ -10,10 +10,14 @@ public class NPC : MonoBehaviour {
 
 	public GameObject arrow;
 	// Use this for initialization
+
+	public bool selected;
+	//bool selected;
+
 	void Start () {
 		
 		spawner = GameObject.FindWithTag ("Spawner").GetComponent<Spawner> ();
-		walkspeed = Random.Range (0.03f, 0.06f);
+		walkspeed = Random.Range (0.06f, 0.1f);
 
 		gm = GameObject.FindWithTag ("GameManager").GetComponent<GameManager> ();
 	}
@@ -31,11 +35,16 @@ public class NPC : MonoBehaviour {
 				gm.NPCs.Remove (this.gameObject);
 				Destroy (this.gameObject);
 			}
+
+			if (selected) {
+				
+			}
 		}
 	}
 
-	public void selectNPC(bool selected){
-		arrow.SetActive (selected);
+	public void selectNPC(bool closest){
+		selected = closest;
+		arrow.SetActive (closest);
 	}
 
 }

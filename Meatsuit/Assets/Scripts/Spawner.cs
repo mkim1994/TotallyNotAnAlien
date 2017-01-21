@@ -20,8 +20,8 @@ public class Spawner : MonoBehaviour {
 
 	public void Start()
 	{
-		npcSpawnPoint1 = Camera.main.ViewportToWorldPoint (new Vector3 (1.2f, 0.3f, 10.0f));
-		npcSpawnPoint2 = Camera.main.ViewportToWorldPoint (new Vector3 (-0.3f, 0.3f, 10.0f));
+		npcSpawnPoint1 = Camera.main.ViewportToWorldPoint (new Vector3 (1.2f, 0.4f, 10.0f));
+		npcSpawnPoint2 = Camera.main.ViewportToWorldPoint (new Vector3 (-0.3f, 0.4f, 10.0f));
 
 		gm = GameObject.FindWithTag ("GameManager").GetComponent<GameManager> ();
 	}
@@ -52,25 +52,25 @@ public class Spawner : MonoBehaviour {
 
 		switch (randomScale) {
 		case 0:
-			actualScale = 0.4f;
-			break;
-		case 1:
 			actualScale = 0.5f;
 			break;
-		case 2:
+		case 1:
 			actualScale = 0.6f;
 			break;
-		case 3:
+		case 2:
 			actualScale = 0.7f;
 			break;
-		case 4:
+		case 3:
 			actualScale = 0.8f;
 			break;
-		case 5:
+		case 4:
 			actualScale = 0.9f;
 			break;
-		case 6:
+		case 5:
 			actualScale = 1.0f;
+			break;
+		case 6:
+			actualScale = 1.1f;
 			break;
 		}
 
