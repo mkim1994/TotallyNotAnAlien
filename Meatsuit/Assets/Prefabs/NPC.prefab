@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212148553013492898}
   - component: {fileID: 95639756430880722}
   m_Layer: 0
-  m_Name: ArrowRed
+  m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 95673869363609834}
   m_Layer: 0
   m_Name: NPC
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,6 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4398f83e27f5745f9856a40b87cbf221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arrow: {fileID: 1380759529164134}
 --- !u!212 &212125972321556798
 SpriteRenderer:
   m_ObjectHideFlags: 1

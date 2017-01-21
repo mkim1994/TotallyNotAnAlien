@@ -231,7 +231,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 46a25d820691a194b886fd6309edfd49, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 820ef3a75cf93f04dac83a5309260dba, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -417,8 +417,8 @@ MonoBehaviour:
   NPCPrefab: {fileID: 1541818991470134, guid: e1a22c94651e243f8921a8d19bef9966, type: 2}
   npcSpawnPoint1: {x: 0, y: 0, z: 0}
   npcSpawnPoint2: {x: 0, y: 0, z: 0}
-  timeSpawnMin: 1
-  timeSpawnMax: 3
+  timeSpawnMin: 2
+  timeSpawnMax: 4
 --- !u!4 &564526901
 Transform:
   m_ObjectHideFlags: 0
@@ -1388,7 +1388,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ddcc9aa646697204aa8644cc6bcdc333, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c288bba2be5c4e74bb6d463135e14afc, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

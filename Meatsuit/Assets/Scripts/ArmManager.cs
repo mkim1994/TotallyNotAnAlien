@@ -42,9 +42,60 @@ public class ArmManager : MonoBehaviour {
 				CheckWave ();
 			}
 			FingerKeys ();
+
+			//GameObject[] gos = GameObject.FindGameObjectsWithTag ("NPC");
+			GameObject closestNPC = GetClosestNPC ();
+			closestNPC.GetComponent<NPC> ().selectNPC (true);
+			foreach (GameObject npc in gm.NPCs) {
+				if (npc != closestNPC) {
+					npc.GetComponent<NPC> ().selectNPC (false);
+				}
+			}
+			
 		}
 	}
 
+	GameObject GetClosestNPC(){
+		GameObject closest = null;
+		float distance = Mathf.Infinity;
+		Vector3 position = transform.position;
+		foreach (GameObject go in gm.NPCs) {
+			Vector3 diff = go.transform.position - position;
+			float curDistance = diff.sqrMagnitude;
+			if (curDistance < distance) {
+				closest = go;
+				distance = curDistance;
+			}
+		}
+		return closest;
+	}
+
+	void FollowMouse(){
+		target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		target = new Vector3 (target.x, target.y+3, 10);
+		transform.position = target;
+	}
+
+	void CheckWave(){
+		if (waving) {
+			gm.currentSuspicion = 0f;
+			waving = false;
+		}
+		if (Input.GetAxis ("Mouse X") < -waveThreshold) {
+			armMovedLeft = true;
+			if (armMovedRight) {
+				waving = true;
+			}
+			armMovedRight = false;
+		}
+		if (Input.GetAxis ("Mouse X") > waveThreshold) {
+			armMovedRight = true;
+			if (armMovedLeft) {
+				waving = true;
+			}
+			armMovedLeft = false;
+		}
+	}
 
 	void FingerKeys(){
 		if (Input.GetKeyDown (KeyCode.Tab)) {
@@ -103,30 +154,5 @@ public class ArmManager : MonoBehaviour {
 
 	}
 
-	void FollowMouse(){
-		target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		target = new Vector3 (target.x, target.y+3, 10);
-		transform.position = target;
-	}
 
-	void CheckWave(){
-		if (waving) {
-			gm.currentSuspicion = 0f;
-			waving = false;
-		}
-		if (Input.GetAxis ("Mouse X") < -waveThreshold) {
-			armMovedLeft = true;
-			if (armMovedRight) {
-				waving = true;
-			}
-			armMovedRight = false;
-		}
-		if (Input.GetAxis ("Mouse X") > waveThreshold) {
-			armMovedRight = true;
-			if (armMovedLeft) {
-				waving = true;
-			}
-			armMovedLeft = false;
-		}
-	}
 }
