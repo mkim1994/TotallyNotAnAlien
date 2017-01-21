@@ -10,10 +10,18 @@ public class GameManager : MonoBehaviour {
 
 	public bool isArrested;
 
+	AudioManager audiomanager;
+
+
 
 	void Awake () {
 		Time.timeScale = 1f;
 		currentSuspicion = startingSuspicion;
+
+	}
+
+	void Start(){
+		audiomanager = GameObject.FindWithTag ("AudioManager").GetComponent<AudioManager>();
 	}
 	
 	// Update is called once per frame
@@ -26,6 +34,10 @@ public class GameManager : MonoBehaviour {
 
 	void Arrested(){
 		isArrested = true;
+		audiomanager.sirensound.Play();
+
+		print ("what");
+
 		Time.timeScale = 0f;
 	}
 }
