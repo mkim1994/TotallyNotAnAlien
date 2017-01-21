@@ -40,14 +40,6 @@ public class Spawner : MonoBehaviour {
 	private void SpawnThings()
 	{
 
-	/*	int r = Random.Range (0, 2);
-		if (r == 0) {
-			ySpawnPos= 6.0f;
-		}  else {
-			ySpawnPos = -0.6f;
-		}*/
-
-	//	Vector3 newPos = new Vector3(Random.Range(xSpawnPosMin, xSpawnPosMax), ySpawnPos, 0);
 		Vector3 newPos;
 		Vector3 newScale;
 		float possibility = Random.Range (0f, 10f);
@@ -56,25 +48,25 @@ public class Spawner : MonoBehaviour {
 
 		switch (randomScale) {
 		case 0:
-			actualScale = 0.7f;
+			actualScale = 0.4f;
 			break;
 		case 1:
-			actualScale = 0.8f;
+			actualScale = 0.5f;
 			break;
 		case 2:
-			actualScale = 0.9f;
+			actualScale = 0.6f;
 			break;
 		case 3:
-			actualScale = 1.0f;
+			actualScale = 0.7f;
 			break;
 		case 4:
-			actualScale = 1.1f;
+			actualScale = 0.8f;
 			break;
 		case 5:
-			actualScale = 1.2f;
+			actualScale = 0.9f;
 			break;
 		case 6:
-			actualScale = 1.3f;
+			actualScale = 1.0f;
 			break;
 		}
 

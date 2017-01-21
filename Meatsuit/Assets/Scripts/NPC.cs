@@ -9,7 +9,7 @@ public class NPC : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		spawner = GameObject.FindWithTag ("Spawner").GetComponent<Spawner> ();
-		walkspeed = Random.Range (0.08f, 0.2f);
+		walkspeed = Random.Range (0.03f, 0.08f);
 	}
 	
 	// Update is called once per frame
