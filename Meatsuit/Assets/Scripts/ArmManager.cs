@@ -19,6 +19,7 @@ public class ArmManager : MonoBehaviour {
 	GameObject[] fingers;
 	bool[] fingerState;
 
+
 	// Use this for initialization
 	void Start () {
 		uimanager = GameObject.FindWithTag ("UIManager").GetComponent<UIManager> ();

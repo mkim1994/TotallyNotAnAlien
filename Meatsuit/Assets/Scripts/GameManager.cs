@@ -15,16 +15,23 @@ public class GameManager : MonoBehaviour {
 
 
 
+	public GameObject NPCPrefab;
+	Vector3 npcSpawnPoint1;
+	Vector3 npcSpawnPoint2;
+
+
 	void Awake () {
 		Time.timeScale = 1f;
 		currentSuspicion = startingSuspicion;
-
 		uimanager = GameObject.FindWithTag ("UIManager").GetComponent<UIManager> ();
+		audiomanager = GameObject.FindWithTag ("AudioManager").GetComponent<AudioManager>();
+
+		npcSpawnPoint1 = Camera.main.ViewportToWorldPoint (new Vector3 (1.2f, 0.3f, 10.0f));
+		npcSpawnPoint2 = Camera.main.ViewportToWorldPoint (new Vector3 (-0.3f, 0.3f, 10.0f));
 
 	}
 
 	void Start(){
-		audiomanager = GameObject.FindWithTag ("AudioManager").GetComponent<AudioManager>();
 	}
 	
 	// Update is called once per frame
