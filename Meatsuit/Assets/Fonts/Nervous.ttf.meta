@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 64c1d47c5d57c4cbdb39a73110f5096a
+timeCreated: 1485057362
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Nervous
+  fontNames:
+  - Nervous
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
