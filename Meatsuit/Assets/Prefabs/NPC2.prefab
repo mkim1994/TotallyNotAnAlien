@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 95673869363609834}
   - component: {fileID: 82092429785328232}
   m_Layer: 0
-  m_Name: NPC
+  m_Name: NPC2
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,7 +180,7 @@ Animator:
   m_GameObject: {fileID: 1541818991470134}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4d2bae5a609d94974993b4fe22677b66, type: 2}
+  m_Controller: {fileID: 9100000, guid: d9714f1dd4796426fbd3de41ac464762, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -201,6 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrow: {fileID: 1380759529164134}
   selected: 0
+  paused: 0
 --- !u!212 &212125972321556798
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -232,7 +233,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1643956603
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 46317d75d6cb84d71bedde1d72d29251, type: 3}
+  m_Sprite: {fileID: 21300000, guid: af7961bec72d74d02938985d9694ee89, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

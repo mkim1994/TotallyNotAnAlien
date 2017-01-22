@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour {
 
 	GameManager gm;
 
-	public GameObject NPCPrefab;
+	public GameObject[] NPCPrefabs;
 
 	public Vector3 npcSpawnPoint1;
 	public Vector3 npcSpawnPoint2;
@@ -91,7 +91,8 @@ public class Spawner : MonoBehaviour {
 			newScale = new Vector3 (-1f*actualScale, actualScale);
 		}
 
-		GameObject npc = Instantiate (NPCPrefab, newPos, Quaternion.identity) as GameObject;
+		int r = Random.Range (0, NPCPrefabs.Length);
+		GameObject npc = Instantiate (NPCPrefabs[r], newPos, Quaternion.identity) as GameObject;
 		npc.transform.localScale = newScale;
 		npc.GetComponent<SpriteRenderer> ().sortingOrder = order;
 

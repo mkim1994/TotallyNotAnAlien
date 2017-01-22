@@ -14,7 +14,7 @@ public class NPC : MonoBehaviour {
 
 	//AudioSource audio;
 	new AudioSource audio;
-	new Animator anim;
+	Animator anim;
 
 	public GameObject arrow;
 	// Use this for initialization
@@ -101,8 +101,8 @@ public class NPC : MonoBehaviour {
 
 						reacted = true;
 						arrow.GetComponent<SpriteRenderer> ().color = new Color (1, 1, 1, 0.3f);
-						//audio.clip = audiomanager.transform.GetChild (2).gameObject.GetComponent<AudioSource> ().clip;
-						//audio.Play ();
+						audio.clip = audiomanager.transform.GetChild (4).gameObject.GetComponent<AudioSource> ().clip;
+						audio.Play ();
 					}
 				}
 			}

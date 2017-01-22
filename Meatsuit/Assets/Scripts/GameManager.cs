@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour {
 
 	AudioManager audiomanager;
 	UIManager uimanager;
-	ArmManager armmanager;
+	//ArmManager armmanager;
 
 
 	void Awake () {
@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour {
 		currentSuspicion = startingSuspicion;
 		uimanager = GameObject.FindWithTag ("UIManager").GetComponent<UIManager> ();
 		audiomanager = GameObject.FindWithTag ("AudioManager").GetComponent<AudioManager>();
-		armmanager = GameObject.FindWithTag ("ArmManager").GetComponent<ArmManager> ();
+		//armmanager = GameObject.FindWithTag ("ArmManager").GetComponent<ArmManager> ();
 
 		NPCs = new List<GameObject> ();
 	}

@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: NPCWave
+  m_Name: NPC1Wave
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -138,7 +138,7 @@ AnimationClip:
   m_GenerateMotionCurves: 0
   m_IsEmpty: 0
   m_Events:
-  - time: 1.2
+  - time: 1.25
     functionName: resumeNPCHappyWalk
     data: 
     objectReferenceParameter: {fileID: 1541818991470134, guid: e1a22c94651e243f8921a8d19bef9966,
