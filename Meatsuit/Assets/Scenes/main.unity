@@ -2805,10 +2805,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af11d27d38b764714be74b6dfdd11467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxFucks: 3
-  maxVictories: 3
+  maxFucks: 6
+  maxVictories: 6
   startingSuspicion: 0
-  suspicionRate: 0.00001
+  suspicionRate: 0.00025
   suspicionAccelerationRateIncrease: 0.00001
   suspicionAccelerationRateIncreaseInterval: 5
   suspicionSpike: 1.5
