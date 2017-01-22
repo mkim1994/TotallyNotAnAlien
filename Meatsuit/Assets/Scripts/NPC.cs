@@ -23,7 +23,7 @@ public class NPC : MonoBehaviour {
 	//bool selected;
 
 	bool reacted;
-	bool paused;
+	public bool paused;
 
 	Vector3 reactionLeft;
 	Vector3 reactionRight;

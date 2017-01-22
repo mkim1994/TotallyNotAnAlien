@@ -114,12 +114,18 @@ public class GameManager : MonoBehaviour {
 		uimanager.gameOverText.gameObject.SetActive (true);
 	//	Camera.main.GetComponent<CameraShake> ().enabled = true;
 	//	Camera.main.GetComponent<CameraShake> ().shakeDuration = 0.5f;
-
+		foreach(GameObject npc in NPCs){
+			npc.GetComponent<NPC> ().paused = true;
+		}
 
 		Time.timeScale = 0f;
 	}
 
 	void Win(){
+
+		foreach(GameObject npc in NPCs){
+			npc.GetComponent<NPC> ().paused = true;
+		}
 		uimanager.winText.gameObject.SetActive (true);
 		Time.timeScale = 0f;
 

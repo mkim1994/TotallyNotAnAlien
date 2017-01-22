@@ -1,0 +1,502 @@
+fileFormatVersion: 2
+guid: f2ee98c1b795341cc89ba55d52e50731
+timeCreated: 1485102870
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: NPC2_walk_SMILE_0
+    21300002: NPC2_walk_SMILE_1
+    21300004: NPC2_walk_SMILE_2
+    21300006: NPC2_walk_SMILE_3
+    21300008: NPC2_walk_SMILE_4
+    21300010: NPC2_walk_SMILE_5
+    21300012: NPC2_walk_SMILE_6
+    21300014: NPC2_walk_SMILE_7
+    21300016: NPC2_walk_SMILE_8
+    21300018: NPC2_walk_SMILE_9
+    21300020: NPC2_walk_SMILE_10
+    21300022: NPC2_walk_SMILE_11
+    21300024: NPC2_walk_SMILE_12
+    21300026: NPC2_walk_SMILE_13
+    21300028: NPC2_walk_SMILE_14
+    21300030: NPC2_walk_SMILE_15
+    21300032: NPC2_walk_SMILE_16
+    21300034: NPC2_walk_SMILE_17
+    21300036: NPC2_walk_SMILE_18
+    21300038: NPC2_walk_SMILE_19
+    21300040: NPC2_walk_SMILE_20
+    21300042: NPC2_walk_SMILE_21
+    21300044: NPC2_walk_SMILE_22
+    21300046: NPC2_walk_SMILE_23
+    21300048: NPC2_walk_SMILE_24
+    21300050: NPC2_walk_SMILE_25
+    21300052: NPC2_walk_SMILE_26
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: tvOS
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Samsung TV
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_1
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_2
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_3
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_4
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_5
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_6
+      rect:
+        serializedVersion: 2
+        x: 3126
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_7
+      rect:
+        serializedVersion: 2
+        x: 3647
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_8
+      rect:
+        serializedVersion: 2
+        x: 4168
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_10
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_11
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_12
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_13
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_14
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_15
+      rect:
+        serializedVersion: 2
+        x: 3126
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_16
+      rect:
+        serializedVersion: 2
+        x: 3647
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_17
+      rect:
+        serializedVersion: 2
+        x: 4168
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_19
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_20
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_21
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_22
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_23
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_24
+      rect:
+        serializedVersion: 2
+        x: 3126
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_25
+      rect:
+        serializedVersion: 2
+        x: 3647
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC2_walk_SMILE_26
+      rect:
+        serializedVersion: 2
+        x: 4168
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
