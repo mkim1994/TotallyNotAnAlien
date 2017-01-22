@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,4 +9,8 @@ public class changeScene : MonoBehaviour {
     {
         SceneManager.LoadScene("main", LoadSceneMode.Single);
     }
+
+	public void ChangeToMainMenu(){
+	SceneManager.LoadScene("splashScreen");
+	}
 }
