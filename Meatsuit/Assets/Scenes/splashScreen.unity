@@ -164,7 +164,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -911, y: -601}
+  m_AnchoredPosition: {x: -1158, y: -632}
   m_SizeDelta: {x: -355, y: -150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &248179305
@@ -186,8 +186,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: affc56d0f014c20488f5c04e932aedbb, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -697,8 +697,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: 2}
-  m_SizeDelta: {x: 406, y: 317}
+  m_AnchoredPosition: {x: -6.25, y: -36}
+  m_SizeDelta: {x: 432.5, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1812597127
 MonoBehaviour:
@@ -732,12 +732,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Mission Brief
-
-
-    The Hegemony demands we learn more about Earth''s primitive hairless apes. Intelligence
-    reports that these "humans" use rudamentary hand gestures to relay information.
-    Learn them and use them to meld into their herds. The Hegemony demands it!'
+  m_Text: The Hegemony demands we learn more about Earth's primitive hairless apes.
+    Intelligence reports that these "humans" use rudamentary hand gestures to relay
+    information. Learn them and use them to meld into their herds. The Hegemony demands
+    it!
 --- !u!222 &1812597128
 CanvasRenderer:
   m_ObjectHideFlags: 0
