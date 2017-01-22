@@ -2628,7 +2628,7 @@ MonoBehaviour:
   suspicionRate: 0.00025
   suspicionAccelerationRateIncrease: 0
   suspicionAccelerationRateIncreaseInterval: 5
-  suspicionSpike: 2
+  suspicionSpike: 0
   suspicionDown: 0.3
   timeSpawnMin: 1
   timeSpawnMax: 3
@@ -3009,7 +3009,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1541818991470134, guid: 7624a063cf51845a097f657cd3537825, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7624a063cf51845a097f657cd3537825, type: 2}
