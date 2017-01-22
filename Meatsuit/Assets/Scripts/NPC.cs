@@ -31,19 +31,16 @@ public class NPC : MonoBehaviour {
 
 	void Start () {
 
-		walkspeed = Random.Range (gm.walkspeedMin,gm.walkspeedMax);
 		spawner = GameObject.FindWithTag ("Spawner").GetComponent<Spawner> ();
-
 		gm = GameObject.FindWithTag ("GameManager").GetComponent<GameManager> ();
-
 		audiomanager = GameObject.FindWithTag ("AudioManager").GetComponent<AudioManager> ();
-
 		armmanager = GameObject.FindWithTag ("ArmManager").GetComponent<ArmManager> ();
-
+		uimanager = GameObject.FindWithTag ("UIManager").GetComponent<UIManager> ();
 		audio = GetComponent<AudioSource> ();
 		anim = GetComponent<Animator> ();
 
-		uimanager = GameObject.FindWithTag ("UIManager").GetComponent<UIManager> ();
+		walkspeed = Random.Range (gm.walkspeedMin,gm.walkspeedMax);
+
 
 		reactionLeft = Camera.main.ViewportToWorldPoint (new Vector3 (0.08f, 0.5f, 10.0f));
 		reactionRight = Camera.main.ViewportToWorldPoint (new Vector3 (0.92f, 0.5f, 10.0f));
