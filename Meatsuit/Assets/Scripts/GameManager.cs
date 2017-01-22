@@ -103,8 +103,8 @@ public class GameManager : MonoBehaviour {
 			victoryQuotaMet = true;
 		}
 
-		uimanager.fucksQuotaUI.text = numFucks+"/6";
-		uimanager.victoryQuotaUI.text = numVictories + "/6";
+		uimanager.fucksQuotaUI.text = numFucks+"/"+maxFucks;
+		uimanager.victoryQuotaUI.text = numVictories + "/"+maxVictories;
 	}
 
 	void Arrested(){
