@@ -26,7 +26,6 @@ public class UIManager : MonoBehaviour {
 	}
 
 	void suspicionClimb(){
-		gm.currentSuspicion += gm.suspicionRate;
 		suspicionSlider.value = gm.currentSuspicion;
 	}
 }

@@ -91,6 +91,8 @@ public class NPC : MonoBehaviour {
 						audio.Play ();
 
 					} else if(armmanager.victoryGesture){
+						paused = true;
+						anim.SetTrigger ("npcAcknowledges");
 						gm.numVictories++;
 						if (!uimanager.victoryQuotaUI.gameObject.activeSelf) {
 							uimanager.victoryQuotaUI.gameObject.SetActive (true);
@@ -122,6 +124,11 @@ public class NPC : MonoBehaviour {
 	public void resumeNPCAngerWalk(){
 		paused = false;
 		anim.SetTrigger ("npcAngerWalks");
+	}
+
+	public void resumeNPCRegularWalk(){
+		paused = false;
+		anim.SetTrigger ("npcWalks");
 	}
 
 }
