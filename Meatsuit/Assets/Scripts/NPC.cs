@@ -11,6 +11,8 @@ public class NPC : MonoBehaviour {
 	float walkspeed;
 	GameManager gm;
 
+	AudioSource audio;
+
 	public GameObject arrow;
 	// Use this for initialization
 
@@ -18,6 +20,7 @@ public class NPC : MonoBehaviour {
 	//bool selected;
 
 	bool wavedAt;
+
 
 	void Start () {
 
@@ -29,6 +32,8 @@ public class NPC : MonoBehaviour {
 		audiomanager = GameObject.FindWithTag ("AudioManager").GetComponent<AudioManager> ();
 
 		armmanager = GameObject.FindWithTag ("ArmManager").GetComponent<ArmManager> ();
+
+		audio = GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -48,7 +53,9 @@ public class NPC : MonoBehaviour {
 			if (selected) {
 				if (armmanager.waving && !wavedAt) {
 					wavedAt = true;
-					audiomanager.transform.GetChild (2).gameObject.GetComponent<AudioSource> ().Play ();
+					arrow.GetComponent<SpriteRenderer> ().color = new Color(1,1,1,0.3f);
+					audio.clip = audiomanager.transform.GetChild (2).gameObject.GetComponent<AudioSource> ().clip;
+					audio.Play ();
 				}
 			}
 		}

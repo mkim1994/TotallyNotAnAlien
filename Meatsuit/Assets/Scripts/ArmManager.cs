@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class ArmManager : MonoBehaviour {
 
+	public Sprite finger;
+	//public Sprite fingerBent;
+
+	public Sprite handInside;
+	public Sprite handOutside;
+
+	public bool handFlipped;
+
 	private Vector3 target;
 
 	public bool waving;
@@ -16,9 +24,12 @@ public class ArmManager : MonoBehaviour {
 	bool armMovedRight;
 
 	GameObject hand;
-	GameObject[] fingers;
+	public GameObject[] fingers;
+	public GameObject[] fingersBent;
 	bool[] fingerState;
 
+	//Vector3[] fingerPositions;
+	//public Vector3[] fingerBentPositions;
 
 	// Use this for initialization
 	void Start () {
@@ -26,10 +37,8 @@ public class ArmManager : MonoBehaviour {
 		gm = GameObject.FindWithTag ("GameManager").GetComponent<GameManager> ();
 
 		hand = this.gameObject.transform.GetChild(1).gameObject;
-		fingers = new GameObject[5];
 		fingerState = new bool[5];
-		for (int i = 0; i < fingers.Length; i++) {
-			fingers [i] = hand.transform.GetChild (i).gameObject;
+		for (int i = 0; i < fingerState.Length; i++) {
 			fingerState [i] = true;
 		}
 	}
@@ -109,61 +118,83 @@ public class ArmManager : MonoBehaviour {
 	}
 
 	void FingerKeys(){
+
+		//check if fingers should be front of or behind the hand
+		if (handFlipped) {
+			for (int i = 0; i < fingersBent.Length; i++) {
+				if (fingersBent [i].activeSelf) {
+					fingersBent [i].GetComponent<SpriteRenderer> ().sortingOrder = 2;
+				}
+			}
+		} else {
+			for (int i = 0; i < fingersBent.Length; i++) {
+				//fingers [i].GetComponent<SpriteRenderer> ().sortingOrder = 0;
+				fingersBent [i].GetComponent<SpriteRenderer> ().sortingOrder = 0;
+			}
+		}
+
+		//handflip
 		if (Input.GetKeyDown (KeyCode.Tab)) {
 			transform.localScale = new Vector3 (transform.localScale.x * -1, transform.localScale.y);
+			if (!handFlipped) {
+				handFlipped = true;
+				hand.GetComponent<SpriteRenderer> ().sprite = handInside;
+
+			} else {
+				handFlipped = false;
+				hand.GetComponent<SpriteRenderer> ().sprite = handOutside;
+			}
+			
 		}
 
 		if (Input.GetKeyDown (KeyCode.A)) { //thumb
 			if (fingers [0].activeSelf) {
 				fingers [0].SetActive (false);
-				fingerState [0] = false;
+				fingersBent [0].SetActive (true);
 			} else {
+				fingersBent [0].SetActive (false);
 				fingers [0].SetActive (true);
-				fingerState [0] = true;
 			}
 		}
 
 		if (Input.GetKeyDown (KeyCode.S)) { //index
 			if (fingers [1].activeSelf) {
 				fingers [1].SetActive (false);
-				fingerState [1] = false;
+				fingersBent [1].SetActive (true);
 			} else {
+				fingersBent [1].SetActive (false);
 				fingers [1].SetActive (true);
-				fingerState [1] = true;
 			}
 		}
 
 		if (Input.GetKeyDown (KeyCode.D)) { //middle
 			if (fingers [2].activeSelf) {
 				fingers [2].SetActive (false);
-				fingerState [2] = false;
+				fingersBent [2].SetActive (true);
 			} else {
+				fingersBent [2].SetActive (false);
 				fingers [2].SetActive (true);
-				fingerState [2] = true;
 			}
 		}
 
-		if (Input.GetKeyDown (KeyCode.F)) { //ring
+		if (Input.GetKeyDown (KeyCode.F)) { //ring-
 			if (fingers [3].activeSelf) {
 				fingers [3].SetActive (false);
-				fingerState [3] = false;
+				fingersBent [3].SetActive (true);
 			} else {
+				fingersBent [3].SetActive (false);
 				fingers [3].SetActive (true);
-				fingerState [3] = true;
 			}
 		}
 
 		if (Input.GetKeyDown (KeyCode.G)) { //pinky
 			if (fingers [4].activeSelf) {
 				fingers [4].SetActive (false);
-				fingerState [4] = false;
+				fingersBent [4].SetActive (true);
 			} else {
+				fingersBent [4].SetActive (false);
 				fingers [4].SetActive (true);
-				fingerState [4] = true;
 			}
 		}
-
 	}
-
-
 }
