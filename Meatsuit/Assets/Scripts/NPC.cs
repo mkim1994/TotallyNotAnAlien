@@ -11,7 +11,8 @@ public class NPC : MonoBehaviour {
 	float walkspeed;
 	GameManager gm;
 
-	AudioSource audio;
+	//AudioSource audio;
+	new AudioSource audio;
 
 	public GameObject arrow;
 	// Use this for initialization
@@ -19,7 +20,7 @@ public class NPC : MonoBehaviour {
 	public bool selected;
 	//bool selected;
 
-	bool wavedAt;
+	bool reacted;
 
 
 	void Start () {
@@ -51,11 +52,24 @@ public class NPC : MonoBehaviour {
 			}
 
 			if (selected) {
-				if (armmanager.waving && !wavedAt) {
-					wavedAt = true;
-					arrow.GetComponent<SpriteRenderer> ().color = new Color(1,1,1,0.3f);
-					audio.clip = audiomanager.transform.GetChild (2).gameObject.GetComponent<AudioSource> ().clip;
-					audio.Play ();
+				if (!reacted) {
+					if (armmanager.waveGesture && armmanager.waving) {
+						reacted = true;
+						arrow.GetComponent<SpriteRenderer> ().color = new Color (1, 1, 1, 0.3f);
+						audio.clip = audiomanager.transform.GetChild (2).gameObject.GetComponent<AudioSource> ().clip;
+						audio.Play ();
+					} else if (armmanager.fuckGesture) {
+						reacted = true;
+						arrow.GetComponent<SpriteRenderer> ().color = new Color (1, 1, 1, 0.3f);
+						audio.clip = audiomanager.transform.GetChild (3).gameObject.GetComponent<AudioSource> ().clip;
+						audio.Play ();
+
+					} else if(armmanager.victoryGesture){
+						reacted = true;
+						arrow.GetComponent<SpriteRenderer> ().color = new Color (1, 1, 1, 0.3f);
+						audio.clip = audiomanager.transform.GetChild (2).gameObject.GetComponent<AudioSource> ().clip;
+						audio.Play ();
+					}
 				}
 			}
 		}

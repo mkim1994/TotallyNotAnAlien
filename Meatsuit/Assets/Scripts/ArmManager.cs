@@ -17,7 +17,13 @@ public class ArmManager : MonoBehaviour {
 	public bool waving;
 	public float waveThreshold;
 
-	UIManager uimanager;
+	public bool waveGesture;
+	public bool fuckGesture;
+	public bool victoryGesture;
+
+	public bool[] gestureFlags;
+
+	//UIManager uimanager;
 	GameManager gm;
 
 	bool armMovedLeft;
@@ -33,7 +39,7 @@ public class ArmManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		uimanager = GameObject.FindWithTag ("UIManager").GetComponent<UIManager> ();
+	//	uimanager = GameObject.FindWithTag ("UIManager").GetComponent<UIManager> ();
 		gm = GameObject.FindWithTag ("GameManager").GetComponent<GameManager> ();
 
 		hand = this.gameObject.transform.GetChild(1).gameObject;
@@ -41,14 +47,13 @@ public class ArmManager : MonoBehaviour {
 		for (int i = 0; i < fingerState.Length; i++) {
 			fingerState [i] = true;
 		}
+
+		gestureFlags = new bool[6];
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (!gm.isArrested) {
-			FollowMouse ();
-			CheckWave ();
-			FingerKeys ();
 
 			//GameObject[] gos = GameObject.FindGameObjectsWithTag ("NPC");
 			GameObject closestNPC = GetClosestNPC ();
@@ -58,7 +63,10 @@ public class ArmManager : MonoBehaviour {
 					npc.GetComponent<NPC> ().selectNPC (false);
 				}
 			}
-			
+			FollowMouse ();
+			CheckWave ();
+			FingerKeys ();
+			CheckGesture ();
 		}
 	}
 
@@ -115,6 +123,34 @@ public class ArmManager : MonoBehaviour {
 
 	void CheckGesture(){
 
+		//check what gesture you're doing
+		for (int i = 0; i < fingers.Length; i++) {
+			gestureFlags [i] = fingers [i].activeSelf;
+		}
+		gestureFlags [5] = hand.GetComponent<SpriteRenderer> ().sprite == handOutside;
+
+		//match it with the gesture data
+		//wave
+		if (gestureFlags [0] && gestureFlags [1] && gestureFlags [2] && gestureFlags [3] && gestureFlags [4] && gestureFlags [5]) {
+			waveGesture = true;
+			fuckGesture = false;
+			victoryGesture = false;
+		} else if ((gestureFlags [0] || !gestureFlags[0]) && !gestureFlags [1] && gestureFlags [2] && !gestureFlags [3] && !gestureFlags [4] && !gestureFlags [5]) {
+			fuckGesture = true;
+			waveGesture = false;
+			victoryGesture = false;
+		} else if (!gestureFlags [0] && gestureFlags [1] && gestureFlags [2] && !gestureFlags [3] && !gestureFlags [4] && gestureFlags [5]) {
+			victoryGesture = true;
+			fuckGesture = false;
+			waveGesture = false;
+		} else {
+			waveGesture = false;
+			fuckGesture = false;
+			victoryGesture = false;
+
+		}
+
+
 	}
 
 	void FingerKeys(){
@@ -128,7 +164,6 @@ public class ArmManager : MonoBehaviour {
 			}
 		} else {
 			for (int i = 0; i < fingersBent.Length; i++) {
-				//fingers [i].GetComponent<SpriteRenderer> ().sortingOrder = 0;
 				fingersBent [i].GetComponent<SpriteRenderer> ().sortingOrder = 0;
 			}
 		}
