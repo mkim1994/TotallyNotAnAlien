@@ -80,8 +80,9 @@ public class NPC : MonoBehaviour {
 						anim.SetTrigger ("npcAngers");
 
 						gm.numFucks++;
-						if (!uimanager.fucksQuotaUI.gameObject.activeSelf) {
-							uimanager.fucksQuotaUI.gameObject.SetActive (true);
+						if(uimanager.fuckimage.sprite != uimanager.fucksprite){
+							uimanager.fuckimage.sprite = uimanager.fucksprite;
+
 						}
 
 						gm.currentSuspicion *= gm.suspicionSpike;
@@ -94,8 +95,9 @@ public class NPC : MonoBehaviour {
 						paused = true;
 						anim.SetTrigger ("npcAcknowledges");
 						gm.numVictories++;
-						if (!uimanager.victoryQuotaUI.gameObject.activeSelf) {
-							uimanager.victoryQuotaUI.gameObject.SetActive (true);
+						if(uimanager.victoryimage.sprite != uimanager.victorysprite){
+							uimanager.victoryimage.sprite = uimanager.victorysprite;
+
 						}
 						//gm.currentSuspicion = gm.startingSuspicion;
 

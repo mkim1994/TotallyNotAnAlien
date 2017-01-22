@@ -11,6 +11,12 @@ public class UIManager : MonoBehaviour {
 	public Text fucksQuotaUI;
 	public Text victoryQuotaUI;
 
+	public Image fuckimage;
+	public Image victoryimage;
+
+	public Sprite fucksprite;
+	public Sprite victorysprite;
+
 	//public Image 
 
 	GameManager gm;
