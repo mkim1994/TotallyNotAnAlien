@@ -69,6 +69,18 @@ public class GameManager : MonoBehaviour {
 			if (currentSuspicion >= 1f && !isArrested) {
 				Arrested ();
 			}
+			if (!isArrested) {
+				if (currentSuspicion >= 0.7f) {
+					if (!audiomanager.dangerAlarm.isPlaying) {
+						audiomanager.dangerAlarm.Play ();
+					}
+				} else {
+					if (audiomanager.dangerAlarm.isPlaying) {
+						audiomanager.dangerAlarm.Stop ();
+					}
+
+				}
+			}
 
 			CheckQuota ();
 			if (fuckQuotaMet && victoryQuotaMet) {
@@ -110,6 +122,7 @@ public class GameManager : MonoBehaviour {
 	void Arrested(){
 		isArrested = true;
 		audiomanager.sirensound.Play ();
+		audiomanager.dangerAlarm.Stop ();
 
 		uimanager.gameOverText.gameObject.SetActive (true);
 	//	Camera.main.GetComponent<CameraShake> ().enabled = true;
@@ -123,6 +136,7 @@ public class GameManager : MonoBehaviour {
 
 	void Win(){
 
+		audiomanager.dangerAlarm.Stop ();
 		foreach(GameObject npc in NPCs){
 			npc.GetComponent<NPC> ().paused = true;
 		}

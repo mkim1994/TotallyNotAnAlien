@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour {
 	public AudioSource sirensound;
 	public AudioSource armMoveLeft;
 	public AudioSource armMoveRight;
+	public AudioSource dangerAlarm;
 
 
 	// Use this for initialization
