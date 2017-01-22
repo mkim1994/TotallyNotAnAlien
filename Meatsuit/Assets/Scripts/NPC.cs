@@ -69,7 +69,7 @@ public class NPC : MonoBehaviour {
 						audio.Play ();
 
 					} else if (armmanager.fuckGesture) {
-
+						gm.numFucks++;
 						gm.currentSuspicion *= gm.suspicionSpike;
 						reacted = true;
 						arrow.GetComponent<SpriteRenderer> ().color = new Color (1, 1, 1, 0.3f);
@@ -77,7 +77,7 @@ public class NPC : MonoBehaviour {
 						audio.Play ();
 
 					} else if(armmanager.victoryGesture){
-
+						gm.numVictories++;
 						gm.currentSuspicion = gm.startingSuspicion;
 						reacted = true;
 						arrow.GetComponent<SpriteRenderer> ().color = new Color (1, 1, 1, 0.3f);

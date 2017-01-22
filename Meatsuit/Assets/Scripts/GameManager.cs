@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
-	
+
+	[Header("Quotas")]
+	public int maxFucks;
+	public int maxVictories;
+
 	public float startingSuspicion = 0.001f;
 	public float currentSuspicion;
 	public float suspicionRate; //0.001;
@@ -12,6 +16,9 @@ public class GameManager : MonoBehaviour {
 	public float suspicionDown;
 
 	public bool isArrested;
+
+	public int numFucks;
+	public int numVictories;
 
 	AudioManager audiomanager;
 	UIManager uimanager;
@@ -40,12 +47,6 @@ public class GameManager : MonoBehaviour {
 		if (currentSuspicion >= 1f & !isArrested) {
 			Arrested ();
 		}
-		/*if (armmanager.waveGesture) {
-			currentSuspicion = 0f;
-		}*/
-
-
-		
 	}
 
 	void Arrested(){
@@ -53,8 +54,8 @@ public class GameManager : MonoBehaviour {
 		audiomanager.sirensound.Play ();
 
 		uimanager.gameOverText.gameObject.SetActive (true);
-		Camera.main.GetComponent<CameraShake> ().enabled = true;
-		Camera.main.GetComponent<CameraShake> ().shakeDuration = 0.5f;
+	//	Camera.main.GetComponent<CameraShake> ().enabled = true;
+	//	Camera.main.GetComponent<CameraShake> ().shakeDuration = 0.5f;
 
 
 		Time.timeScale = 0f;

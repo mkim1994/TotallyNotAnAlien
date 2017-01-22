@@ -2005,12 +2005,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af11d27d38b764714be74b6dfdd11467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxFucks: 6
+  maxVictories: 3
   startingSuspicion: 0
   currentSuspicion: 0
   suspicionRate: 0.00025
   suspicionSpike: 2
   suspicionDown: 0.3
   isArrested: 0
+  numFucks: 0
+  numVictories: 0
   NPCs: []
 --- !u!1 &1822392935
 GameObject:
