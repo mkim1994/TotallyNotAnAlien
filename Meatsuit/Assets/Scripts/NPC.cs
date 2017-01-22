@@ -78,7 +78,8 @@ public class NPC : MonoBehaviour {
 
 					} else if(armmanager.victoryGesture){
 						gm.numVictories++;
-						gm.currentSuspicion = gm.startingSuspicion;
+						//gm.currentSuspicion = gm.startingSuspicion;
+						//just a passive quota meet
 						reacted = true;
 						arrow.GetComponent<SpriteRenderer> ().color = new Color (1, 1, 1, 0.3f);
 						audio.clip = audiomanager.transform.GetChild (2).gameObject.GetComponent<AudioSource> ().clip;

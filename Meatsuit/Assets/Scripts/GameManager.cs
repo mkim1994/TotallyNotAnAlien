@@ -19,6 +19,10 @@ public class GameManager : MonoBehaviour {
 
 	public int numFucks;
 	public int numVictories;
+	public bool fuckQuotaMet;
+	public bool victoryQuotaMet;
+
+	public bool win;
 
 	AudioManager audiomanager;
 	UIManager uimanager;
@@ -44,9 +48,32 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (currentSuspicion >= 1f & !isArrested) {
-			Arrested ();
+		if (!win) {
+			if (currentSuspicion >= 1f & !isArrested) {
+				Arrested ();
+			}
+
+			CheckQuota ();
+			if (fuckQuotaMet && victoryQuotaMet) {
+				win = true;
+			}
+		} else {
+			Win ();
 		}
+
+	}
+
+	void CheckQuota(){
+		if (numFucks >= maxFucks) {
+			fuckQuotaMet = true;
+		}
+
+		if (numVictories >= maxVictories) {
+			victoryQuotaMet = true;
+		}
+
+		uimanager.fucksQuotaUI.text = numFucks+"/6";
+		uimanager.victoryQuotaUI.text = numVictories + "/6";
 	}
 
 	void Arrested(){
@@ -59,5 +86,11 @@ public class GameManager : MonoBehaviour {
 
 
 		Time.timeScale = 0f;
+	}
+
+	void Win(){
+		uimanager.winText.gameObject.SetActive (true);
+		Time.timeScale = 0f;
+
 	}
 }

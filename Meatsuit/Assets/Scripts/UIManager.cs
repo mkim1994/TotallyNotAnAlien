@@ -7,6 +7,10 @@ public class UIManager : MonoBehaviour {
 
 	public Slider suspicionSlider;
 	public Text gameOverText;
+	public Text winText;
+	public Text fucksQuotaUI;
+	public Text victoryQuotaUI;
+
 	//public Image 
 
 	GameManager gm;
