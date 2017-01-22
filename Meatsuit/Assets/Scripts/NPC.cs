@@ -51,7 +51,7 @@ public class NPC : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!gm.isArrested) {
+		if (!gm.isArrested || !gm.win) {
 			if (!paused) {
 				if (transform.localScale.x > 0) { //facing left
 					transform.position -= new Vector3 (walkspeed, 0f);

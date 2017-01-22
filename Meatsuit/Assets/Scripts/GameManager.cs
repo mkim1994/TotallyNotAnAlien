@@ -5,32 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
-	[Header("Quotas")]
+	[Header("Quotas (win condition)")]
 	public int maxFucks;
 	public int maxVictories;
 
+	[Header("Suspicion Meter Control")]
 	public float startingSuspicion = 0.001f;
 	public float currentSuspicion;
 	public float suspicionRate; //0.001;
 
+	[Header("Suspicion Meter Interaction with Gestures")]
 	public float suspicionSpike;
 	public float suspicionDown;
 
-	public bool isArrested;
 
-	public int numFucks;
-	public int numVictories;
-	public bool fuckQuotaMet;
-	public bool victoryQuotaMet;
-
-	public bool win;
+	[HideInInspector]
+	public bool isArrested, win;
+	[HideInInspector]
+	public int numFucks, numVictories;
+	[HideInInspector]
+	public bool fuckQuotaMet, victoryQuotaMet;
+	[HideInInspector]
+	public List<GameObject> NPCs;
 
 	AudioManager audiomanager;
 	UIManager uimanager;
-
 	ArmManager armmanager;
 
-	public List<GameObject> NPCs;
 
 	void Awake () {
 		Time.timeScale = 1f;
