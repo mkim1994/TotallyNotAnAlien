@@ -22,6 +22,9 @@ public class NPC : MonoBehaviour {
 
 	bool reacted;
 
+	Vector3 reactionLeft;
+	Vector3 reactionRight;
+
 
 	void Start () {
 
@@ -35,6 +38,10 @@ public class NPC : MonoBehaviour {
 		armmanager = GameObject.FindWithTag ("ArmManager").GetComponent<ArmManager> ();
 
 		audio = GetComponent<AudioSource> ();
+
+
+		reactionLeft = Camera.main.ViewportToWorldPoint (new Vector3 (0.08f, 0.5f, 10.0f));
+		reactionRight = Camera.main.ViewportToWorldPoint (new Vector3 (0.92f, 0.5f, 10.0f));
 	}
 	
 	// Update is called once per frame
@@ -52,7 +59,8 @@ public class NPC : MonoBehaviour {
 			}
 
 			if (selected) {
-				if (!reacted) {
+				
+				if (!reacted && (transform.position.x < reactionRight.x && transform.position.x > reactionLeft.x)) {
 					if (armmanager.waveGesture && armmanager.waving) {
 						reacted = true;
 						arrow.GetComponent<SpriteRenderer> ().color = new Color (1, 1, 1, 0.3f);

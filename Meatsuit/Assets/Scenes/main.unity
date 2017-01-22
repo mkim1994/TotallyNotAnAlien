@@ -558,7 +558,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &565503834
 GameObject:
@@ -600,7 +600,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &662011228
 GameObject:
@@ -650,6 +650,10 @@ MonoBehaviour:
   handFlipped: 0
   waving: 0
   waveThreshold: 0.6
+  waveGesture: 0
+  fuckGesture: 0
+  victoryGesture: 0
+  gestureFlags: 
   fingers:
   - {fileID: 2092368906}
   - {fileID: 1822392935}
@@ -1033,7 +1037,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4263029065895114, guid: e1a22c94651e243f8921a8d19bef9966, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1541818991470134, guid: e1a22c94651e243f8921a8d19bef9966, type: 2}
       propertyPath: m_IsActive
@@ -1329,7 +1333,7 @@ Transform:
   - {fileID: 81789552}
   - {fileID: 2081420766}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1449299784
 GameObject:
@@ -1396,7 +1400,7 @@ Transform:
   - {fileID: 331405743}
   - {fileID: 1808026872}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1579419883
 MonoBehaviour:
@@ -1766,7 +1770,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1811329839
 MonoBehaviour:
@@ -1781,7 +1785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingSuspicion: 0
   currentSuspicion: 0
-  suspicionRate: 0
+  suspicionRate: 0.001
   isArrested: 0
   NPCs: []
 --- !u!1 &1822392935
