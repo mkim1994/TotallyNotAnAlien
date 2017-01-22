@@ -11,8 +11,8 @@ public class Spawner : MonoBehaviour {
 	public Vector3 npcSpawnPoint1;
 	public Vector3 npcSpawnPoint2;
 
-	public float timeSpawnMin;
-	public float timeSpawnMax;
+/*	public float timeSpawnMin;
+	public float timeSpawnMax;*/
 
 	private float timeUntilSpawn;
 
@@ -24,21 +24,28 @@ public class Spawner : MonoBehaviour {
 		npcSpawnPoint2 = Camera.main.ViewportToWorldPoint (new Vector3 (-0.3f, 0.4f, 10.0f));
 
 		gm = GameObject.FindWithTag ("GameManager").GetComponent<GameManager> ();
+
+		InvokeRepeating ("spawnrateIncrease",gm.spawnrateIncreaseInterval,gm.spawnrateIncreaseInterval);
 	}
 
 	public void Update()
 	{
-		timeBetweenSpawns = Random.Range (timeSpawnMin,timeSpawnMax);
+		
+		timeBetweenSpawns = (Random.Range (gm.timeSpawnMin,gm.timeSpawnMax)) + gm.spawnrate;
 		//Time.delaTime is how much time has occured since the last update. 
 		//We subtract it from time until spawn every frame
 		timeUntilSpawn -= Time.deltaTime;
-		//Once timeUntilSpawn is less than 0, we spawn a new hat
+		//Once timeUntilSpawn is less than 0, we spawn a new NPC
 		if (timeUntilSpawn <= 0)
 		{
 			SpawnThings();
 			//then we reset timeUntilSpawn to the timeBetweenSpawns & start all over again
 			timeUntilSpawn = timeBetweenSpawns;
 		}
+	}
+
+	void spawnrateIncrease(){
+		gm.spawnrate += gm.spawnrateIncrease;
 	}
 
 	private void SpawnThings()

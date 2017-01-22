@@ -31,7 +31,7 @@ public class NPC : MonoBehaviour {
 
 	void Start () {
 
-		walkspeed = Random.Range (0.06f, 0.1f);
+		walkspeed = Random.Range (gm.walkspeedMin,gm.walkspeedMax);
 		spawner = GameObject.FindWithTag ("Spawner").GetComponent<Spawner> ();
 
 		gm = GameObject.FindWithTag ("GameManager").GetComponent<GameManager> ();

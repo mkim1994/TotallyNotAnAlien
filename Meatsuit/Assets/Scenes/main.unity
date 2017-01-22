@@ -744,8 +744,6 @@ MonoBehaviour:
   NPCPrefab: {fileID: 1541818991470134, guid: e1a22c94651e243f8921a8d19bef9966, type: 2}
   npcSpawnPoint1: {x: 0, y: 0, z: 0}
   npcSpawnPoint2: {x: 0, y: 0, z: 0}
-  timeSpawnMin: 3
-  timeSpawnMax: 4
 --- !u!4 &564526901
 Transform:
   m_ObjectHideFlags: 0
@@ -2421,16 +2419,26 @@ MonoBehaviour:
   maxFucks: 6
   maxVictories: 6
   startingSuspicion: 0
-  currentSuspicion: 0
   suspicionRate: 0.00025
+  suspicionAccelerationRateIncrease: 0.1
+  suspicionAccelerationRateIncreaseInterval: 5
   suspicionSpike: 2
   suspicionDown: 0.3
+  timeSpawnMin: 1
+  timeSpawnMax: 3
+  spawnrateIncrease: 0.1
+  spawnrateIncreaseInterval: 5
+  walkspeedMin: 0.06
+  walkspeedMax: 0.1
+  spawnrate: 0
+  suspicionAccelerationRate: 0
+  currentSuspicion: 0
   isArrested: 0
+  win: 0
   numFucks: 0
   numVictories: 0
   fuckQuotaMet: 0
   victoryQuotaMet: 0
-  win: 0
   NPCs: []
 --- !u!1 &1822392935
 GameObject:

@@ -11,14 +11,28 @@ public class GameManager : MonoBehaviour {
 
 	[Header("Suspicion Meter Control")]
 	public float startingSuspicion = 0.001f;
-	public float currentSuspicion;
 	public float suspicionRate; //0.001;
+
+	[Header("Suspicion Meter Control (acceleration rate is additive, interval is in seconds)")]
+	public float suspicionAccelerationRateIncrease;
+	public float suspicionAccelerationRateIncreaseInterval;
 
 	[Header("Suspicion Meter Interaction with Gestures")]
 	public float suspicionSpike;
 	public float suspicionDown;
 
+	[Header("NPC Control (spawn time is random between timeSpawnMin & timeSpawnMax)")]
+	public float timeSpawnMin;
+	public float timeSpawnMax;
+	[Header("NPC Control (spawnrate is additive, interval is in seconds)")]
+	public float spawnrateIncrease;
+	public float spawnrateIncreaseInterval;
+	[Header("NPC Control (walkspeed is random between walkspeedMin & walkspeedMax)")]
+	public float walkspeedMin;
+	public float walkspeedMax;
 
+	[HideInInspector]
+	public float spawnrate, suspicionAccelerationRate, currentSuspicion;
 	[HideInInspector]
 	public bool isArrested, win;
 	[HideInInspector]
@@ -45,13 +59,14 @@ public class GameManager : MonoBehaviour {
 
 	void Start(){
 
+		InvokeRepeating ("suspicionRateIncrease",suspicionAccelerationRateIncreaseInterval,suspicionAccelerationRateIncreaseInterval);
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (!win) {
-			if (currentSuspicion >= 1f & !isArrested) {
+			if (currentSuspicion >= 1f && !isArrested) {
 				Arrested ();
 			}
 
@@ -59,6 +74,8 @@ public class GameManager : MonoBehaviour {
 			if (fuckQuotaMet && victoryQuotaMet) {
 				win = true;
 			}
+				
+			currentSuspicion += suspicionRate;
 		} else {
 			Win ();
 		}
@@ -70,6 +87,11 @@ public class GameManager : MonoBehaviour {
 		/*//return to main menu
 		if*/
 
+	}
+
+	void suspicionRateIncrease(){
+		suspicionAccelerationRate += suspicionAccelerationRateIncrease;
+		suspicionRate += suspicionAccelerationRate;
 	}
 
 	void CheckQuota(){
