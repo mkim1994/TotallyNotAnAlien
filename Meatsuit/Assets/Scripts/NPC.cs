@@ -10,6 +10,7 @@ public class NPC : MonoBehaviour {
 	Spawner spawner;
 	float walkspeed;
 	GameManager gm;
+	UIManager uimanager;
 
 	//AudioSource audio;
 	new AudioSource audio;
@@ -39,6 +40,7 @@ public class NPC : MonoBehaviour {
 
 		audio = GetComponent<AudioSource> ();
 
+		uimanager = GameObject.FindWithTag ("UIManager").GetComponent<UIManager> ();
 
 		reactionLeft = Camera.main.ViewportToWorldPoint (new Vector3 (0.08f, 0.5f, 10.0f));
 		reactionRight = Camera.main.ViewportToWorldPoint (new Vector3 (0.92f, 0.5f, 10.0f));
@@ -70,6 +72,10 @@ public class NPC : MonoBehaviour {
 
 					} else if (armmanager.fuckGesture) {
 						gm.numFucks++;
+						if (!uimanager.fucksQuotaUI.gameObject.activeSelf) {
+							uimanager.fucksQuotaUI.gameObject.SetActive (true);
+						}
+
 						gm.currentSuspicion *= gm.suspicionSpike;
 						reacted = true;
 						arrow.GetComponent<SpriteRenderer> ().color = new Color (1, 1, 1, 0.3f);
@@ -78,12 +84,17 @@ public class NPC : MonoBehaviour {
 
 					} else if(armmanager.victoryGesture){
 						gm.numVictories++;
+						if (!uimanager.victoryQuotaUI.gameObject.activeSelf) {
+							uimanager.victoryQuotaUI.gameObject.SetActive (true);
+						}
 						//gm.currentSuspicion = gm.startingSuspicion;
+
 						//just a passive quota meet
+
 						reacted = true;
 						arrow.GetComponent<SpriteRenderer> ().color = new Color (1, 1, 1, 0.3f);
-						audio.clip = audiomanager.transform.GetChild (2).gameObject.GetComponent<AudioSource> ().clip;
-						audio.Play ();
+						//audio.clip = audiomanager.transform.GetChild (2).gameObject.GetComponent<AudioSource> ().clip;
+						//audio.Play ();
 					}
 				}
 			}
