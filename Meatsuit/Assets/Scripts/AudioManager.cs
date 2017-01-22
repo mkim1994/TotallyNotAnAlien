@@ -6,6 +6,8 @@ public class AudioManager : MonoBehaviour {
 
 	public AudioSource bgm;
 	public AudioSource sirensound;
+	public AudioSource armMoveLeft;
+	public AudioSource armMoveRight;
 
 	// Use this for initialization
 	void Start () {

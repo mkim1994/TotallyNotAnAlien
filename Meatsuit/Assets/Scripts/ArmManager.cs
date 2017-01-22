@@ -34,6 +34,8 @@ public class ArmManager : MonoBehaviour {
 	public GameObject[] fingersBent;
 	bool[] fingerState;
 
+	AudioManager audiomanager;
+
 	//Vector3[] fingerPositions;
 	//public Vector3[] fingerBentPositions;
 
@@ -41,6 +43,7 @@ public class ArmManager : MonoBehaviour {
 	void Start () {
 	//	uimanager = GameObject.FindWithTag ("UIManager").GetComponent<UIManager> ();
 		gm = GameObject.FindWithTag ("GameManager").GetComponent<GameManager> ();
+		audiomanager = GameObject.FindWithTag ("AudioManager").GetComponent<AudioManager> ();
 
 		hand = this.gameObject.transform.GetChild(1).gameObject;
 		fingerState = new bool[5];
@@ -74,10 +77,7 @@ public class ArmManager : MonoBehaviour {
 		GameObject closest = null;
 		float distance = Mathf.Infinity;
 		Vector3 position = transform.position;
-		//int max = gm.NPCs [0].GetComponent<SpriteRenderer> ().sortingOrder;
 		foreach (GameObject go in gm.NPCs) {
-			//if(
-
 			Vector3 diff = go.transform.position - position;
 			float curDistance = diff.sqrMagnitude;
 			if (curDistance < distance) {
@@ -105,6 +105,9 @@ public class ArmManager : MonoBehaviour {
 				waving = false;
 			}
 			if (Input.GetAxis ("Mouse X") < -waveThreshold) {
+				if (!audiomanager.armMoveLeft.isPlaying) {
+					audiomanager.armMoveLeft.Play ();
+				}
 				armMovedLeft = true;
 				if (armMovedRight) {
 					waving = true;
@@ -112,6 +115,9 @@ public class ArmManager : MonoBehaviour {
 				armMovedRight = false;
 			}
 			if (Input.GetAxis ("Mouse X") > waveThreshold) {
+				if (!audiomanager.armMoveRight.isPlaying) {
+					audiomanager.armMoveRight.Play ();
+				}
 				armMovedRight = true;
 				if (armMovedLeft) {
 					waving = true;
