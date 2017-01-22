@@ -14,6 +14,7 @@ public class NPC : MonoBehaviour {
 
 	//AudioSource audio;
 	new AudioSource audio;
+	new Animator anim;
 
 	public GameObject arrow;
 	// Use this for initialization
@@ -22,6 +23,7 @@ public class NPC : MonoBehaviour {
 	//bool selected;
 
 	bool reacted;
+	bool paused;
 
 	Vector3 reactionLeft;
 	Vector3 reactionRight;
@@ -39,6 +41,7 @@ public class NPC : MonoBehaviour {
 		armmanager = GameObject.FindWithTag ("ArmManager").GetComponent<ArmManager> ();
 
 		audio = GetComponent<AudioSource> ();
+		anim = GetComponent<Animator> ();
 
 		uimanager = GameObject.FindWithTag ("UIManager").GetComponent<UIManager> ();
 
@@ -49,10 +52,12 @@ public class NPC : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (!gm.isArrested) {
-			if (transform.localScale.x > 0) { //facing left
-				transform.position -= new Vector3 (walkspeed, 0f);
-			} else { //facing right
-				transform.position += new Vector3 (walkspeed, 0f);
+			if (!paused) {
+				if (transform.localScale.x > 0) { //facing left
+					transform.position -= new Vector3 (walkspeed, 0f);
+				} else { //facing right
+					transform.position += new Vector3 (walkspeed, 0f);
+				}
 			}
 
 			if (transform.position.x > spawner.npcSpawnPoint1.x || transform.position.x < spawner.npcSpawnPoint2.x) {
@@ -64,6 +69,9 @@ public class NPC : MonoBehaviour {
 				
 				if (!reacted && (transform.position.x < reactionRight.x && transform.position.x > reactionLeft.x)) {
 					if (armmanager.waveGesture && armmanager.waving) {
+						paused = true;
+						anim.SetTrigger ("npcWaves");
+
 						gm.currentSuspicion *= gm.suspicionDown;
 						reacted = true;
 						arrow.GetComponent<SpriteRenderer> ().color = new Color (1, 1, 1, 0.3f);
@@ -71,6 +79,9 @@ public class NPC : MonoBehaviour {
 						audio.Play ();
 
 					} else if (armmanager.fuckGesture) {
+						paused = true;
+						anim.SetTrigger ("npcAngers");
+
 						gm.numFucks++;
 						if (!uimanager.fucksQuotaUI.gameObject.activeSelf) {
 							uimanager.fucksQuotaUI.gameObject.SetActive (true);
@@ -104,6 +115,16 @@ public class NPC : MonoBehaviour {
 	public void selectNPC(bool closest){
 		selected = closest;
 		arrow.SetActive (closest);
+	}
+
+	public void resumeNPCHappyWalk(){
+		paused = false;
+		anim.SetTrigger ("npcHappyWalks");
+	}
+
+	public void resumeNPCAngerWalk(){
+		paused = false;
+		anim.SetTrigger ("npcAngerWalks");
 	}
 
 }

@@ -1,9 +1,34 @@
 fileFormatVersion: 2
 guid: 75d1df600b63843a7b224d6810bc7602
-timeCreated: 1485053263
+timeCreated: 1485068685
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: NPC_SpriteSheet_WAVE_0
+    21300002: NPC_SpriteSheet_WAVE_1
+    21300004: NPC_SpriteSheet_WAVE_2
+    21300006: NPC_SpriteSheet_WAVE_3
+    21300008: NPC_SpriteSheet_WAVE_4
+    21300010: NPC_SpriteSheet_WAVE_5
+    21300012: NPC_SpriteSheet_WAVE_6
+    21300014: NPC_SpriteSheet_WAVE_7
+    21300016: NPC_SpriteSheet_WAVE_8
+    21300018: NPC_SpriteSheet_WAVE_9
+    21300020: NPC_SpriteSheet_WAVE_10
+    21300022: NPC_SpriteSheet_WAVE_11
+    21300024: NPC_SpriteSheet_WAVE_12
+    21300026: NPC_SpriteSheet_WAVE_13
+    21300028: NPC_SpriteSheet_WAVE_14
+    21300030: NPC_SpriteSheet_WAVE_15
+    21300032: NPC_SpriteSheet_WAVE_16
+    21300034: NPC_SpriteSheet_WAVE_17
+    21300036: NPC_SpriteSheet_WAVE_18
+    21300038: NPC_SpriteSheet_WAVE_19
+    21300040: NPC_SpriteSheet_WAVE_20
+    21300042: NPC_SpriteSheet_WAVE_21
+    21300044: NPC_SpriteSheet_WAVE_22
+    21300046: NPC_SpriteSheet_WAVE_23
+    21300048: NPC_SpriteSheet_WAVE_24
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -34,7 +59,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -51,16 +76,397 @@ TextureImporter:
   textureFormatSet: 0
   platformSettings:
   - buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: tvOS
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Samsung TV
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3684
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_1
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 3684
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_2
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 3684
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_3
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 3684
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_4
+      rect:
+        serializedVersion: 2
+        x: 2484
+        y: 3684
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2763
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_6
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 2763
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_7
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 2763
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_8
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 2763
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_9
+      rect:
+        serializedVersion: 2
+        x: 2484
+        y: 2763
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1842
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_11
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 1842
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_12
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1842
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_13
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 1842
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_14
+      rect:
+        serializedVersion: 2
+        x: 2484
+        y: 1842
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 921
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_16
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 921
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_17
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 921
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_18
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 921
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_19
+      rect:
+        serializedVersion: 2
+        x: 2484
+        y: 921
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_21
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 0
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_22
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 0
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_23
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 0
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WAVE_24
+      rect:
+        serializedVersion: 2
+        x: 2484
+        y: 0
+        width: 621
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

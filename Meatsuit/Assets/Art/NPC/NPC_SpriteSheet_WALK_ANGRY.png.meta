@@ -1,9 +1,36 @@
 fileFormatVersion: 2
 guid: 0f56ac6dba0db411285ce33298691f69
-timeCreated: 1485053243
+timeCreated: 1485068769
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: NPC_SpriteSheet_WALK_ANGRY_0
+    21300002: NPC_SpriteSheet_WALK_ANGRY_1
+    21300004: NPC_SpriteSheet_WALK_ANGRY_2
+    21300006: NPC_SpriteSheet_WALK_ANGRY_3
+    21300008: NPC_SpriteSheet_WALK_ANGRY_4
+    21300010: NPC_SpriteSheet_WALK_ANGRY_5
+    21300012: NPC_SpriteSheet_WALK_ANGRY_6
+    21300014: NPC_SpriteSheet_WALK_ANGRY_7
+    21300016: NPC_SpriteSheet_WALK_ANGRY_8
+    21300018: NPC_SpriteSheet_WALK_ANGRY_9
+    21300020: NPC_SpriteSheet_WALK_ANGRY_10
+    21300022: NPC_SpriteSheet_WALK_ANGRY_11
+    21300024: NPC_SpriteSheet_WALK_ANGRY_12
+    21300026: NPC_SpriteSheet_WALK_ANGRY_13
+    21300028: NPC_SpriteSheet_WALK_ANGRY_14
+    21300030: NPC_SpriteSheet_WALK_ANGRY_15
+    21300032: NPC_SpriteSheet_WALK_ANGRY_16
+    21300034: NPC_SpriteSheet_WALK_ANGRY_17
+    21300036: NPC_SpriteSheet_WALK_ANGRY_18
+    21300038: NPC_SpriteSheet_WALK_ANGRY_19
+    21300040: NPC_SpriteSheet_WALK_ANGRY_20
+    21300042: NPC_SpriteSheet_WALK_ANGRY_21
+    21300044: NPC_SpriteSheet_WALK_ANGRY_22
+    21300046: NPC_SpriteSheet_WALK_ANGRY_23
+    21300048: NPC_SpriteSheet_WALK_ANGRY_24
+    21300050: NPC_SpriteSheet_WALK_ANGRY_25
+    21300052: NPC_SpriteSheet_WALK_ANGRY_26
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -34,7 +61,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -51,16 +78,423 @@ TextureImporter:
   textureFormatSet: 0
   platformSettings:
   - buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: tvOS
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Samsung TV
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_1
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_2
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_3
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_4
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_5
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_6
+      rect:
+        serializedVersion: 2
+        x: 3126
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_7
+      rect:
+        serializedVersion: 2
+        x: 3647
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_8
+      rect:
+        serializedVersion: 2
+        x: 4168
+        y: 1842
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_10
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_11
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_12
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_13
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_14
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_15
+      rect:
+        serializedVersion: 2
+        x: 3126
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_16
+      rect:
+        serializedVersion: 2
+        x: 3647
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_17
+      rect:
+        serializedVersion: 2
+        x: 4168
+        y: 921
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_19
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_20
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_21
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_22
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_23
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_24
+      rect:
+        serializedVersion: 2
+        x: 3126
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_25
+      rect:
+        serializedVersion: 2
+        x: 3647
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NPC_SpriteSheet_WALK_ANGRY_26
+      rect:
+        serializedVersion: 2
+        x: 4168
+        y: 0
+        width: 521.1111
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
