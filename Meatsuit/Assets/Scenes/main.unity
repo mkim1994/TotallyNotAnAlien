@@ -709,7 +709,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &662011228
 GameObject:
@@ -740,7 +740,7 @@ Transform:
   - {fileID: 1031800820}
   - {fileID: 1007209318}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &662011230
 MonoBehaviour:
@@ -1351,7 +1351,7 @@ RectTransform:
   - {fileID: 560764100}
   - {fileID: 1693772684}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1620,7 +1620,7 @@ Transform:
   - {fileID: 1073923492}
   - {fileID: 271310744}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1579419883
 MonoBehaviour:
@@ -2007,7 +2007,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingSuspicion: 0
   currentSuspicion: 0
-  suspicionRate: 0.001
+  suspicionRate: 0.00025
+  suspicionSpike: 2
+  suspicionDown: 0.3
   isArrested: 0
   NPCs: []
 --- !u!1 &1822392935
@@ -2202,7 +2204,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2035119967
 GameObject:

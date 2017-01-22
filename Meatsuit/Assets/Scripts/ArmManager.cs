@@ -101,7 +101,6 @@ public class ArmManager : MonoBehaviour {
 	void CheckWave(){
 		if (Input.GetMouseButton (0)) {
 			if (waving) {
-				gm.currentSuspicion = 0f;
 				waving = false;
 			}
 			if (Input.GetAxis ("Mouse X") < -waveThreshold) {
@@ -138,6 +137,7 @@ public class ArmManager : MonoBehaviour {
 		//match it with the gesture data
 		//wave
 		if (gestureFlags [0] && gestureFlags [1] && gestureFlags [2] && gestureFlags [3] && gestureFlags [4] && gestureFlags [5]) {
+			
 			waveGesture = true;
 			fuckGesture = false;
 			victoryGesture = false;

@@ -62,17 +62,23 @@ public class NPC : MonoBehaviour {
 				
 				if (!reacted && (transform.position.x < reactionRight.x && transform.position.x > reactionLeft.x)) {
 					if (armmanager.waveGesture && armmanager.waving) {
+						gm.currentSuspicion *= gm.suspicionDown;
 						reacted = true;
 						arrow.GetComponent<SpriteRenderer> ().color = new Color (1, 1, 1, 0.3f);
 						audio.clip = audiomanager.transform.GetChild (2).gameObject.GetComponent<AudioSource> ().clip;
 						audio.Play ();
+
 					} else if (armmanager.fuckGesture) {
+
+						gm.currentSuspicion *= gm.suspicionSpike;
 						reacted = true;
 						arrow.GetComponent<SpriteRenderer> ().color = new Color (1, 1, 1, 0.3f);
 						audio.clip = audiomanager.transform.GetChild (3).gameObject.GetComponent<AudioSource> ().clip;
 						audio.Play ();
 
 					} else if(armmanager.victoryGesture){
+
+						gm.currentSuspicion = gm.startingSuspicion;
 						reacted = true;
 						arrow.GetComponent<SpriteRenderer> ().color = new Color (1, 1, 1, 0.3f);
 						audio.clip = audiomanager.transform.GetChild (2).gameObject.GetComponent<AudioSource> ().clip;

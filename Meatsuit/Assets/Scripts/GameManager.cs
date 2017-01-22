@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 	
-	public float startingSuspicion = 0f;
+	public float startingSuspicion = 0.001f;
 	public float currentSuspicion;
 	public float suspicionRate; //0.001;
+
+	public float suspicionSpike;
+	public float suspicionDown;
 
 	public bool isArrested;
 
 	AudioManager audiomanager;
 	UIManager uimanager;
+
+	ArmManager armmanager;
 
 	public List<GameObject> NPCs;
 
@@ -20,11 +25,14 @@ public class GameManager : MonoBehaviour {
 		currentSuspicion = startingSuspicion;
 		uimanager = GameObject.FindWithTag ("UIManager").GetComponent<UIManager> ();
 		audiomanager = GameObject.FindWithTag ("AudioManager").GetComponent<AudioManager>();
+		armmanager = GameObject.FindWithTag ("ArmManager").GetComponent<ArmManager> ();
 
 		NPCs = new List<GameObject> ();
 	}
 
 	void Start(){
+
+
 	}
 	
 	// Update is called once per frame
@@ -32,6 +40,11 @@ public class GameManager : MonoBehaviour {
 		if (currentSuspicion >= 1f & !isArrested) {
 			Arrested ();
 		}
+		/*if (armmanager.waveGesture) {
+			currentSuspicion = 0f;
+		}*/
+
+
 		
 	}
 
