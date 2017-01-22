@@ -129,9 +129,11 @@ public class GameManager : MonoBehaviour {
 	//	Camera.main.GetComponent<CameraShake> ().shakeDuration = 0.5f;
 		foreach(GameObject npc in NPCs){
 			npc.GetComponent<NPC> ().paused = true;
+			npc.GetComponent<NPC> ().GetComponent<Animator> ().speed = 0;
 		}
 
-		Time.timeScale = 0f;
+		//Time.timeScale = 0f;
+		StartCoroutine (invokeBadEnding ());
 	}
 
 	void Win(){
@@ -139,9 +141,24 @@ public class GameManager : MonoBehaviour {
 		audiomanager.dangerAlarm.Stop ();
 		foreach(GameObject npc in NPCs){
 			npc.GetComponent<NPC> ().paused = true;
+			npc.GetComponent<NPC> ().GetComponent<Animator> ().speed = 0;
 		}
 		uimanager.winText.gameObject.SetActive (true);
-		Time.timeScale = 0f;
+
+		//Time.timeScale = 0f;
+		StartCoroutine (invokeGoodEnding ());
 
 	}
+
+	IEnumerator invokeGoodEnding(){
+		yield return new WaitForSeconds (3f);
+		SceneManager.LoadScene ("EndScene_Good");
+	}
+
+
+	IEnumerator invokeBadEnding(){
+		yield return new WaitForSeconds (3f);
+		SceneManager.LoadScene ("EndScene_Bad");
+	}
+
 }

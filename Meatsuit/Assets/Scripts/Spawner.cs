@@ -30,17 +30,17 @@ public class Spawner : MonoBehaviour {
 
 	public void Update()
 	{
-		
-		timeBetweenSpawns = (Random.Range (gm.timeSpawnMin,gm.timeSpawnMax)) + gm.spawnrate;
-		//Time.delaTime is how much time has occured since the last update. 
-		//We subtract it from time until spawn every frame
-		timeUntilSpawn -= Time.deltaTime;
-		//Once timeUntilSpawn is less than 0, we spawn a new NPC
-		if (timeUntilSpawn <= 0)
-		{
-			SpawnThings();
-			//then we reset timeUntilSpawn to the timeBetweenSpawns & start all over again
-			timeUntilSpawn = timeBetweenSpawns;
+		if (!gm.win && !gm.isArrested) {
+			timeBetweenSpawns = (Random.Range (gm.timeSpawnMin, gm.timeSpawnMax)) + gm.spawnrate;
+			//Time.delaTime is how much time has occured since the last update. 
+			//We subtract it from time until spawn every frame
+			timeUntilSpawn -= Time.deltaTime;
+			//Once timeUntilSpawn is less than 0, we spawn a new NPC
+			if (timeUntilSpawn <= 0) {
+				SpawnThings ();
+				//then we reset timeUntilSpawn to the timeBetweenSpawns & start all over again
+				timeUntilSpawn = timeBetweenSpawns;
+			}
 		}
 	}
 
