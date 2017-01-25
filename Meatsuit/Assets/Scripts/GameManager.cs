@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour {
 
 		//restart
 		if(Input.GetKeyDown(KeyCode.Escape)){
-			SceneManager.LoadScene ("main");
+			SceneManager.LoadScene ("splashScreen");
 		}
 		/*//return to main menu
 		if*/

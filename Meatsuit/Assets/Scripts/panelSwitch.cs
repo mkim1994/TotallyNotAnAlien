@@ -10,9 +10,11 @@ public class panelSwitch : MonoBehaviour {
 	public GameObject Menu3;
 	public GameObject Menu4;
 
+
     // Use this for initialization
     public void ChangePanelNext()
     {
+		GetComponent<AudioSource> ().Play ();
 		if (start.activeSelf) {
 			start.SetActive (false);
 			Menu1.SetActive (true);
@@ -30,6 +32,8 @@ public class panelSwitch : MonoBehaviour {
     }
 
 	public void ChangePanelPrevious(){
+
+		GetComponent<AudioSource> ().Play ();
 		if (Menu1.activeSelf) {
 			Menu1.SetActive (false);
 			start.SetActive (true);

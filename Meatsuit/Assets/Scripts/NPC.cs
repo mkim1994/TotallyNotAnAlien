@@ -99,7 +99,6 @@ public class NPC : MonoBehaviour {
 							uimanager.victoryimage.sprite = uimanager.victorysprite;
 
 						}
-						//gm.currentSuspicion = gm.startingSuspicion;
 
 						//just a passive quota meet
 
