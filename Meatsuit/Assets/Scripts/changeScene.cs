@@ -11,6 +11,6 @@ public class changeScene : MonoBehaviour {
     }
 
 	public void ChangeToMainMenu(){
-	SceneManager.LoadScene("splashScreen");
+	SceneManager.LoadScene("splashScreen_WINDOWS");
 	}
 }
